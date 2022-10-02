@@ -88,6 +88,14 @@ img {
   vertical-align: middle;
 }
 
+.title {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-size: 3rem;
+  color: var(--black-color);
+  text-transform: uppercase;
+}
+
 .header {
   position: -webkit-sticky;
   position: sticky;
@@ -341,5 +349,46 @@ img {
 
 .hero .slide .content a {
   margin: auto;
+}
+
+.category .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.category .box-container .box {
+  border: var(--main-border);
+  padding: 2rem;
+  text-align: center;
+}
+
+.category .box-container .box .icon {
+  font-size: 6rem;
+  margin-bottom: 1rem;
+  color: var(--black-color);
+}
+
+.category .box-container .box h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--black-color);
+}
+
+.category .box-container .box:hover {
+  background-color: var(--black-color);
+}
+
+.category .box-container .box:hover .icon {
+  color: var(--white-color);
+}
+
+.category .box-container .box:hover h3 {
+  color: var(--white-color);
 }
 /*# sourceMappingURL=main.css.map */

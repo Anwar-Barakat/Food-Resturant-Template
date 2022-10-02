@@ -84,6 +84,14 @@ img {
     vertical-align: middle;
 }
 
+.title {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-size: 3rem;
+    color: var(--black-color);
+    text-transform: uppercase;
+}
+
 //________________________________________
 // Header Section
 //________________________________________
@@ -104,30 +112,72 @@ img {
 //________________________________________
 .hero {
     padding-top: 2rem;
+
     .slide {
         display: flex;
         align-items: center;
         flex-wrap: wrap-reverse;
         gap: 2rem;
+
         .image {
             flex: 1 1 40rem;
             max-width: 400px;
         }
+
         .content {
             flex: 1 1 40rem;
             text-align: center;
             display: grid;
             gap: 1rem;
+
             span {
                 font-size: 2.5rem;
                 color: var(--light-color);
             }
+
             h3 {
                 font-size: 4.5rem;
                 color: var(--black-color);
             }
+
             a {
                 margin: auto;
+            }
+        }
+    }
+}
+
+//________________________________________
+// Category Section
+//________________________________________
+.category {
+    .box-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        gap: 1.5rem;
+        align-items: flex-start;
+        .box {
+            border: var(--main-border);
+            padding: 2rem;
+            text-align: center;
+            .icon {
+                font-size: 6rem;
+                margin-bottom: 1rem;
+                color: var(--black-color);
+            }
+            h3 {
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+                color: var(--black-color);
+            }
+            &:hover {
+                background-color: var(--black-color);
+                .icon {
+                    color: var(--white-color);
+                }
+                h3 {
+                    color: var(--white-color);
+                }
             }
         }
     }
