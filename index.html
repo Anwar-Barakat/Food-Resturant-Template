@@ -17,6 +17,12 @@
             href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
         />
 
+        <!-- swiper cdn -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+        />
+
         <!-- main css -->
         <link rel="stylesheet" href="assets/css/main.css" />
 
@@ -70,8 +76,103 @@
         </header>
         <!-- end header -->
 
+        <!-- start landing page -->
+        <section class="hero">
+            <div class="swiper hero-slider">
+                <div class="swiper-wrapper">
+                    <div class="slide swiper-slide">
+                        <div class="content">
+                            <span>order online</span>
+                            <h3>delicious pizza</h3>
+                            <a href="menu.html" class="btn">see menus</a>
+                        </div>
+                        <div class="image">
+                            <img
+                                src="assets/images/home/hero/pizza.png"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                    <div class="slide swiper-slide">
+                        <div class="content">
+                            <span>order online</span>
+                            <h3>chezzy hamburger</h3>
+                            <a href="menu.html" class="btn">see menus</a>
+                        </div>
+                        <div class="image">
+                            <img
+                                src="assets/images/home/hero/burger.png"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                    <div class="slide swiper-slide">
+                        <div class="content">
+                            <span>order online</span>
+                            <h3>rested chicken</h3>
+                            <a href="menu.html" class="btn">see menus</a>
+                        </div>
+                        <div class="image">
+                            <img
+                                src="assets/images/home/hero/chicken.png"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <!-- end landing page -->
+
+        <!-- start footer -->
+        <footer class="footer">
+            <section class="grid">
+                <div class="box">
+                    <i class="icon fas fa-envelope-open-text"></i>
+                    <h3>our email</h3>
+                    <a href="mailto:brkatanwar0@gmail.com"
+                        >brkatanwar0@gmail.com
+                    </a>
+                </div>
+                <div class="box">
+                    <i class="icon fas fa-clock"></i>
+                    <h3>opening</h3>
+                    <p>00:07 am to 00:08 pm</p>
+                </div>
+                <div class="box">
+                    <i class="icon fas fa-map-marker-alt"></i>
+                    <h3>our address</h3>
+                    <a href="#">damascus, syria - xyz street</a>
+                </div>
+                <div class="box">
+                    <i class="icon fas fa-phone"></i>
+                    <h3>our phone</h3>
+                    <a href="tel:123123123">123-123-123</a>
+                </div>
+            </section>
+            <div class="credit">
+                created by <span>En. Anwar Barakat</span> | All right reseved
+            </div>
+        </footer>
+        <!-- end footer -->
+
         <!-- fontawesome cdn  -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+
+        <!-- swiper cdn -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper(".hero-slider", {
+                loop: true,
+                grabCursor: true,
+                effect: "flip",
+                pagination: {
+                    el: ".swiper-pagination",
+                    dynamicBullets: true,
+                },
+            });
+        </script>
 
         <!-- main js -->
         <script

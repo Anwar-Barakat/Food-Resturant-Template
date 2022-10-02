@@ -1,0 +1,45 @@
+//________________________________________
+// Footer Section
+//________________________________________
+.footer {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        gap: 1.5rem;
+        align-items: flex-start;
+        .box {
+            border: var(--main-border);
+            padding: 2rem;
+            text-align: center;
+            .icon {
+                font-size: 4rem;
+                margin-bottom: 1rem;
+                color: var(--black-color);
+            }
+            h3 {
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+                color: var(--black-color);
+            }
+            a,
+            p {
+                color: var(--light-color);
+                display: block;
+                font-size: 1.2rem;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    .credit {
+        padding: 1.5rem;
+        text-align: center;
+        background-color: var(--black-color);
+        color: var(--white-color);
+        font-size: 1.4rem;
+        span {
+            color: var(--main-color);
+        }
+    }
+}

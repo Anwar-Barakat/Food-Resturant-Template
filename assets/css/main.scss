@@ -54,6 +54,7 @@ section {
     max-width: 1200px;
     padding: 1.5rem;
 }
+
 .btn,
 .delete-btn {
     margin-top: 1rem;
@@ -61,108 +62,73 @@ section {
     font-size: 1.5rem;
     padding: 0.5rem 2rem;
     cursor: pointer;
+
     &:hover {
         letter-spacing: 2px;
     }
 }
+
 .btn {
     background-color: var(--main-color);
     color: var(--black-color);
 }
+
 .delete-btn {
     background-color: var(--second-color);
     color: var(--white-color);
 }
-//________________________________________
-// Header Section
-//________________________________________
-.header {
-    position: sticky;
-    inset: 0;
-    bottom: initial;
-    z-index: 1000;
-    background-color: var(--white-color);
-    border-bottom: var(--main-border);
-    .flex {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        .logo {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            img {
-                max-width: 40px;
-            }
-        }
-        .navbar {
-            display: flex;
-            gap: 3rem;
-            text-align: center;
-            a {
-                font-size: 2rem;
-                color: var(--black-color);
-                border: var(--main-border);
-                &:hover {
-                    color: var(--main-color);
-                }
-            }
-        }
-        .icons {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            & > * {
-                font-size: 2rem;
-                color: var(--black-color);
-                cursor: pointer;
-                &:hover {
-                    color: var(--main-color);
-                }
-                span {
-                    font-size: 1.5rem;
-                }
-            }
-            #menu-btn {
-                display: none;
-            }
-        }
-        .profile {
-            background-color: var(--white-color);
-            border: var(--main-border);
-            padding: 1.5rem;
-            text-align: center;
-            position: absolute;
-            top: 120%;
-            right: -100%;
-            width: 20rem;
-            display: grid;
-            gap: 1rem;
-            opacity: 0;
-            transition: 0.5s;
-            &.active {
-                opacity: 1;
-                right: 2rem;
-            }
-            .name {
-                font-size: 1.5rem;
-                color: var(--black-color);
-            }
-            .account {
-                font-size: 1.5rem;
-                color: var(--light-color);
-                a {
-                    color: var(--black-color);
-                    &:hover {
-                        color: var(--main-color);
-                        text-decoration: underline;
-                    }
-                }
-            }
-        }
-    }
+
+img {
+    object-fit: cover;
+    max-width: 100%;
+    vertical-align: middle;
 }
 
 //________________________________________
 // Header Section
 //________________________________________
+@import "_header";
+//________________________________________
+// Footer Section
+//________________________________________
+@import "_footer";
+
+//________________________________________
+// Custom Swiper
+//________________________________________
+
+@import "_custom-swiper";
+
+//________________________________________
+// Landing Section
+//________________________________________
+.hero {
+    padding-top: 2rem;
+    .slide {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap-reverse;
+        gap: 2rem;
+        .image {
+            flex: 1 1 40rem;
+            max-width: 400px;
+        }
+        .content {
+            flex: 1 1 40rem;
+            text-align: center;
+            display: grid;
+            gap: 1rem;
+            span {
+                font-size: 2.5rem;
+                color: var(--light-color);
+            }
+            h3 {
+                font-size: 4.5rem;
+                color: var(--black-color);
+            }
+            a {
+                margin: auto;
+            }
+        }
+    }
+}

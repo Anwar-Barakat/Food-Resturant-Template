@@ -81,6 +81,13 @@ section {
   color: var(--white-color);
 }
 
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
 .header {
   position: -webkit-sticky;
   position: sticky;
@@ -130,7 +137,6 @@ section {
 .header .flex .navbar a {
   font-size: 2rem;
   color: var(--black-color);
-  border: var(--main-border);
 }
 
 .header .flex .navbar a:hover {
@@ -204,5 +210,136 @@ section {
 .header .flex .profile .account a:hover {
   color: var(--main-color);
   text-decoration: underline;
+}
+
+.footer .grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.footer .grid .box {
+  border: var(--main-border);
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer .grid .box .icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  color: var(--black-color);
+}
+
+.footer .grid .box h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--black-color);
+}
+
+.footer .grid .box a,
+.footer .grid .box p {
+  color: var(--light-color);
+  display: block;
+  font-size: 1.2rem;
+}
+
+.footer .grid .box a:hover {
+  text-decoration: underline;
+}
+
+.footer .credit {
+  padding: 1.5rem;
+  text-align: center;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  font-size: 1.4rem;
+}
+
+.footer .credit span {
+  color: var(--main-color);
+}
+
+.swiper {
+  width: 100%;
+  height: 85vh;
+}
+
+.swiper-slide {
+  text-align: center;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active {
+  background-color: var(--main-color);
+}
+
+.hero {
+  padding-top: 2rem;
+}
+
+.hero .slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+  gap: 2rem;
+}
+
+.hero .slide .image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  max-width: 400px;
+}
+
+.hero .slide .content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  gap: 1rem;
+}
+
+.hero .slide .content span {
+  font-size: 2.5rem;
+  color: var(--light-color);
+}
+
+.hero .slide .content h3 {
+  font-size: 4.5rem;
+  color: var(--black-color);
+}
+
+.hero .slide .content a {
+  margin: auto;
 }
 /*# sourceMappingURL=main.css.map */

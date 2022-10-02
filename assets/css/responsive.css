@@ -43,5 +43,8 @@
   html {
     font-size: 50%;
   }
+  .hero .slide .content h3 {
+    font-size: 3.5rem;
+  }
 }
 /*# sourceMappingURL=responsive.css.map */
