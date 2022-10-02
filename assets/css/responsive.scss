@@ -1,0 +1,40 @@
+@media screen and (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header .flex .icons #menu-btn {
+        display: initial;
+    }
+    .header .flex .navbar {
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;
+        border-top: var(--main-border);
+        border-bottom: var(--main-border);
+        background: var(--white-color);
+        transition: 0.2s linear;
+        flex-direction: column;
+        padding: 2rem;
+        gap: 1rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        &.active {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        }
+    }
+    .header .flex .icons {
+        gap: 1.5rem;
+    }
+    .header .flex .logo img {
+        max-width: 30px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+}
