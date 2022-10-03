@@ -49,5 +49,9 @@
   .title {
     font-size: 2rem;
   }
+  .products .box-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 /*# sourceMappingURL=responsive.css.map */

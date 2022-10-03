@@ -43,4 +43,7 @@
     .title {
         font-size: 2rem;
     }
+    .products .box-container {
+        grid-template-columns: 1fr;
+    }
 }
