@@ -1,0 +1,109 @@
+//________________________________________
+// About Section
+//________________________________________
+.about {
+    .row {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        padding: 3rem;
+        .image {
+            flex: 1 1 40rem;
+            max-width: 400px;
+            img {
+                margin: auto;
+                display: block;
+            }
+        }
+        .content {
+            flex: 1 1 40rem;
+            text-align: center;
+            h3 {
+                font-size: 3rem;
+                color: var(--black-color);
+            }
+            p {
+                font-size: 1.4rem;
+                line-height: 2;
+                color: var(--light-color);
+                padding: 1rem 4rem;
+            }
+        }
+    }
+}
+
+//________________________________________
+// Steps Section
+//________________________________________
+.steps {
+    .box-container {
+        @extend .box-container;
+        .box {
+            text-align: center;
+            border: var(--main-border);
+            padding: 2rem;
+            display: grid;
+            gap: 1rem;
+            .icon {
+                font-size: 6rem;
+                color: var(--black-color);
+                display: block;
+                margin: auto;
+            }
+            h3 {
+                font-size: 1.5rem;
+                color: var(--black-color);
+            }
+            p {
+                font-size: 1.3rem;
+                color: var(--light-color);
+            }
+        }
+    }
+}
+
+//________________________________________
+// Review Section
+//________________________________________
+.reviews {
+    margin-bottom: 4rem;
+    .slide {
+        margin-bottom: 4rem;
+        border-top: var(--main-border);
+        border-bottom: var(--main-border);
+        padding: 2rem 0;
+        text-align: center;
+        display: grid;
+        gap: 1rem;
+        max-height: 32rem;
+        img {
+            height: 10rem;
+            width: 10rem;
+            display: block;
+            margin: auto;
+        }
+        p {
+            padding: 1rem 0;
+            line-height: 2;
+            font-size: 1.5rem;
+            color: var(--light-color);
+        }
+        .stars {
+            display: flex;
+            gap: 0.5rem;
+            justify-content: center;
+            .icon {
+                color: gold;
+                font-size: 1.3rem;
+            }
+        }
+        h3 {
+            color: var(--black-color);
+            font-size: 2rem;
+        }
+    }
+}
+.swiper {
+    height: initial;
+}

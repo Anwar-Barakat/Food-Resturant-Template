@@ -37,6 +37,9 @@
   .header .flex .logo img {
     max-width: 30px;
   }
+  .heading h3 {
+    font-size: 4rem;
+  }
 }
 
 @media screen and (max-width: 450px) {
