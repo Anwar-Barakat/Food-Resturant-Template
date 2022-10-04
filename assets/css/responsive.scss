@@ -50,4 +50,7 @@
     .products .box-container {
         grid-template-columns: 1fr;
     }
+    .products .cart-total {
+        justify-content: center;
+    }
 }

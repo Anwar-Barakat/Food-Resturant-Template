@@ -56,5 +56,10 @@
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
+  .products .cart-total {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 /*# sourceMappingURL=responsive.css.map */

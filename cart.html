@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Resturant Website | Menus</title>
+        <title>Resturant Website | Shopping Cart</title>
         <!-- fontawesome cdn  -->
         <link
             rel="stylesheet"
@@ -72,113 +72,105 @@
 
         <!-- start about -->
         <div class="heading">
-            <h3>our menu</h3>
+            <h3>shopping cart</h3>
             <p>
                 <a href="index.html">Home</a>
-                <span> / menu</span>
+                <span> / shopping cart</span>
             </p>
         </div>
         <!-- end about -->
 
-        <!-- start product section -->
+        <!-- start shopping cart section -->
         <section class="products">
-            <h1 class="title">latest dishes</h1>
+            <h1 class="title">your shopping cart</h1>
+            <div class="cart-total">
+                <p>cart total : <span>$9</span></p>
+                <a href="checkout.html" class="btn">proceed to checkout</a>
+            </div>
             <div class="box-container">
                 <form action="" method="post" class="box">
+                    <button
+                        class="fas fa-trash-alt"
+                        type="submit"
+                        name="delete"
+                        onclick="return confirm('delete this dish ?');"
+                    ></button>
                     <button
                         class="fas fa-eye"
                         type="submit"
                         name="quick_view"
-                    ></button>
-                    <button
-                        class="fas fa-shopping-cart"
-                        type="submit"
-                        name="add_to_cart"
                     ></button>
                     <img
                         src="assets/images/home/drinks/drinkjpg (1).jpg"
                         alt=""
                     />
-                    <a href="" class="cat">desserts</a>
                     <div class="name">cold drink 01</div>
                     <div class="flex">
                         <div class="price"><span>$</span>3</div>
-                        <input
-                            type="number"
-                            name="qty"
-                            class="qty"
-                            min="1"
-                            max="99"
-                            value="1"
-                            onkeypress="if(this.value.length == 2) return false;"
-                        />
+                        <div class="flex">
+                            <input
+                                type="number"
+                                name="qty"
+                                class="qty"
+                                min="1"
+                                max="99"
+                                value="1"
+                                onkeypress="if(this.value.length == 2) return false;"
+                            />
+                            <button type="submit" class="fas fa-edit"></button>
+                        </div>
                     </div>
+                    <div class="sub-total">sub total : <span>$3</span></div>
                 </form>
-
                 <form action="" method="post" class="box">
+                    <button
+                        class="fas fa-trash-alt"
+                        type="submit"
+                        name="delete"
+                        onclick="return confirm('delete this dish ?');"
+                    ></button>
                     <button
                         class="fas fa-eye"
                         type="submit"
                         name="quick_view"
                     ></button>
-                    <button
-                        class="fas fa-shopping-cart"
-                        type="submit"
-                        name="add_to_cart"
-                    ></button>
                     <img
-                        src="assets/images/home/potato/potato (1).jpg"
+                        src="assets/images/home/chikens/chicken (1).jpg"
                         alt=""
                     />
-                    <a href="" class="cat">potato</a>
-                    <div class="name">delicious potato 01</div>
+                    <div class="name">chicken 01</div>
                     <div class="flex">
-                        <div class="price"><span>$</span>3</div>
-                        <input
-                            type="number"
-                            name="qty"
-                            class="qty"
-                            min="1"
-                            max="99"
-                            value="1"
-                            onkeypress="if(this.value.length == 2) return false;"
-                        />
+                        <div class="price"><span>$</span>5</div>
+                        <div class="flex">
+                            <input
+                                type="number"
+                                name="qty"
+                                class="qty"
+                                min="1"
+                                max="99"
+                                value="1"
+                                onkeypress="if(this.value.length == 2) return false;"
+                            />
+                            <button type="submit" class="fas fa-edit"></button>
+                        </div>
                     </div>
+                    <div class="sub-total">sub total : <span>$3</span></div>
                 </form>
-
-                <form action="" method="post" class="box">
+            </div>
+            <div class="more-btn">
+                <form action="" method="post">
                     <button
-                        class="fas fa-eye"
+                        class="delete-btn"
                         type="submit"
-                        name="quick_view"
-                    ></button>
-                    <button
-                        class="fas fa-shopping-cart"
-                        type="submit"
-                        name="add_to_cart"
-                    ></button>
-                    <img
-                        src="assets/images/home/fast food/fast food (1).jpg"
-                        alt=""
-                    />
-                    <a href="" class="cat">fast food</a>
-                    <div class="name">delicious fast food 01</div>
-                    <div class="flex">
-                        <div class="price"><span>$</span>3</div>
-                        <input
-                            type="number"
-                            name="qty"
-                            class="qty"
-                            min="1"
-                            max="99"
-                            value="1"
-                            onkeypress="if(this.value.length == 2) return false;"
-                        />
-                    </div>
+                        name="delete_all"
+                        onclick="return confirm('empty the cart?');"
+                    >
+                        <i class="fas fa-times"></i> empty cart
+                    </button>
                 </form>
             </div>
         </section>
-        <!-- end product section -->
+        <!-- end shopping cart section -->
 
         <!-- start footer -->
         <footer class="footer">
