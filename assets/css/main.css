@@ -531,6 +531,12 @@ img {
 .products .box-container .box .flex .price {
   font-size: 2.5rem;
   color: var(--black-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .products .box-container .box .flex .price span {
@@ -631,6 +637,10 @@ img {
   margin-bottom: 4rem;
 }
 
+.reviews .swiper {
+  height: initial;
+}
+
 .reviews .slide {
   margin-bottom: 4rem;
   border-top: var(--main-border);
@@ -675,9 +685,5 @@ img {
 .reviews .slide h3 {
   color: var(--black-color);
   font-size: 2rem;
-}
-
-.swiper {
-  height: initial;
 }
 /*# sourceMappingURL=main.css.map */

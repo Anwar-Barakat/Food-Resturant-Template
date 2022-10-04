@@ -68,6 +68,9 @@
 //________________________________________
 .reviews {
     margin-bottom: 4rem;
+    .swiper {
+        height: initial;
+    }
     .slide {
         margin-bottom: 4rem;
         border-top: var(--main-border);
@@ -103,7 +106,4 @@
             font-size: 2rem;
         }
     }
-}
-.swiper {
-    height: initial;
 }
