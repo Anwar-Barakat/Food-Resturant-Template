@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Resturant Website | Shopping Cart</title>
+        <title>Resturant Website | Checkout</title>
         <!-- fontawesome cdn  -->
         <link
             rel="stylesheet"
@@ -72,105 +72,70 @@
 
         <!-- start about -->
         <div class="heading">
-            <h3>shopping cart</h3>
+            <h3>checkout</h3>
             <p>
                 <a href="index.html">Home</a>
-                <span> / cart</span>
+                <span> / checkout</span>
             </p>
         </div>
         <!-- end about -->
 
-        <!-- start shopping cart section -->
-        <section class="products">
-            <h1 class="title">your shopping cart</h1>
-            <div class="cart-total">
-                <p>cart total : <span>$9</span></p>
-                <a href="checkout.html" class="btn">proceed to checkout</a>
-            </div>
-            <div class="box-container">
-                <form action="" method="post" class="box">
-                    <button
-                        class="fas fa-trash-alt"
-                        type="submit"
-                        name="delete"
-                        onclick="return confirm('delete this dish ?');"
-                    ></button>
-                    <button
-                        class="fas fa-eye"
-                        type="submit"
-                        name="quick_view"
-                    ></button>
-                    <img
-                        src="assets/images/home/drinks/drinkjpg (1).jpg"
-                        alt=""
-                    />
-                    <div class="name">cold drink 01</div>
-                    <div class="flex">
-                        <div class="price"><span>$</span>3</div>
-                        <div class="flex">
-                            <input
-                                type="number"
-                                name="qty"
-                                class="qty"
-                                min="1"
-                                max="99"
-                                value="1"
-                                onkeypress="if(this.value.length == 2) return false;"
-                            />
-                            <button type="submit" class="fas fa-edit"></button>
-                        </div>
-                    </div>
-                    <div class="sub-total">sub total : <span>$3</span></div>
-                </form>
-                <form action="" method="post" class="box">
-                    <button
-                        class="fas fa-trash-alt"
-                        type="submit"
-                        name="delete"
-                        onclick="return confirm('delete this dish ?');"
-                    ></button>
-                    <button
-                        class="fas fa-eye"
-                        type="submit"
-                        name="quick_view"
-                    ></button>
-                    <img
-                        src="assets/images/home/chikens/chicken (1).jpg"
-                        alt=""
-                    />
-                    <div class="name">chicken 01</div>
-                    <div class="flex">
-                        <div class="price"><span>$</span>5</div>
-                        <div class="flex">
-                            <input
-                                type="number"
-                                name="qty"
-                                class="qty"
-                                min="1"
-                                max="99"
-                                value="1"
-                                onkeypress="if(this.value.length == 2) return false;"
-                            />
-                            <button type="submit" class="fas fa-edit"></button>
-                        </div>
-                    </div>
-                    <div class="sub-total">sub total : <span>$3</span></div>
-                </form>
-            </div>
-            <div class="more-btn">
-                <form action="" method="post">
-                    <button
-                        class="delete-btn"
-                        type="submit"
-                        name="delete_all"
-                        onclick="return confirm('empty the cart?');"
-                    >
-                        <i class="fas fa-times"></i> empty cart
+        <!-- start search section -->
+        <section class="checkout">
+            <h1 class="title">order summary</h1>
+            <form action="" method="post">
+                <div class="cart-items">
+                    <h3>cart items</h3>
+                    <p>
+                        <span class="name">main dish 01</span>
+                        <span class="price">$3</span>
+                    </p>
+                    <p>
+                        <span class="name">delicious pizza 01</span>
+                        <span class="price">$4</span>
+                    </p>
+                    <p class="grand_total">
+                        <span class="name">grand total : </span>
+                        <span class="price">$7</span>
+                    </p>
+                    <a href="cart.html" class="btn">view cart</a>
+                </div>
+                <div class="user-info">
+                    <h3>your info</h3>
+                    <p>
+                        <i class="fas fa-user"></i> <span>Anwar Barakat</span>
+                    </p>
+                    <p><i class="fas fa-phone"></i><span>+0987654321</span></p>
+                    <p>
+                        <i class="fas fa-envelope-open"></i>
+                        <span>brkatanwar0@gmail.com</span>
+                    </p>
+                    <a href="update_profile.html" class="btn">update info</a>
+
+                    <h3>your address</h3>
+                    <p>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Damascus - Syria</span>
+                    </p>
+                    <a href="update_address.html" class="btn">update address</a>
+                    <select name="method" class="box" required>
+                        <option value="" selected disabled>
+                            select payment method
+                        </option>
+                        <option value="cach on delivery">
+                            cach on delivery
+                        </option>
+                        <option value="credit card">credit card</option>
+                        <option value="paytm">paytm</option>
+                        <option value="paypal">paypal</option>
+                    </select>
+                    <button type="submit" class="delete-btn">
+                        place order
                     </button>
-                </form>
-            </div>
+                </div>
+            </form>
         </section>
-        <!-- end shopping cart section -->
+        <!-- end search section -->
 
         <!-- start footer -->
         <footer class="footer">

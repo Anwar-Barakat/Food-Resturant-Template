@@ -851,4 +851,105 @@ img {
   color: var(--second-color);
   font-weight: 600;
 }
+
+.checkout form {
+  max-width: 50rem;
+  margin: 0 auto;
+  border: var(--main-border);
+  padding: 2rem;
+}
+
+.checkout form h3 {
+  font-size: 2.5rem;
+}
+
+.checkout form .btn {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.checkout form .cart-items {
+  background-color: var(--black-color);
+  padding: 2rem;
+  display: -ms-grid;
+  display: grid;
+  gap: 1rem;
+  color: var(--white-color);
+}
+
+.checkout form .cart-items p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.5rem;
+}
+
+.checkout form .cart-items p .name {
+  color: var(--light-color);
+}
+
+.checkout form .cart-items p .price {
+  color: var(--main-color);
+  font-weight: 600;
+}
+
+.checkout form .cart-items p.grand_total {
+  background-color: var(--white-color);
+  padding: 1rem;
+  font-weight: bold;
+}
+
+.checkout form .cart-items p.grand_total .name {
+  color: var(--black-color);
+}
+
+.checkout form .cart-items p.grand_total .price {
+  color: var(--second-color);
+}
+
+.checkout form .user-info {
+  display: -ms-grid;
+  display: grid;
+  gap: 1rem;
+}
+
+.checkout form .user-info p {
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.75rem;
+}
+
+.checkout form .user-info p i {
+  color: var(--light-color);
+}
+
+.checkout form .user-info p span {
+  color: var(--black-color);
+}
+
+.checkout form .user-info .box {
+  margin-top: 1rem;
+  padding: 0.5rem 0;
+  border: var(--main-border);
+  font-size: 1.5rem;
+}
+
+.checkout form .user-info hr {
+  background-color: var(--light-color);
+  height: 1px;
+  margin: 0.5rem 0 1rem;
+}
 /*# sourceMappingURL=main.css.map */
