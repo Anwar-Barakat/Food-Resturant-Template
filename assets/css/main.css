@@ -99,7 +99,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0;
+  margin: auto;
 }
 
 .header .flex .logo {
@@ -737,5 +737,35 @@ img {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.search-form {
+  margin-top: 2rem;
+}
+
+.search-form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: var(--main-border);
+  padding: 1rem 2rem;
+}
+
+.search-form form > * {
+  font-size: 1.5rem;
+}
+
+.search-form form .fa-search {
+  cursor: pointer;
+}
+
+.search-form form .fa-search:hover {
+  color: var(--main-color);
 }
 /*# sourceMappingURL=main.css.map */
