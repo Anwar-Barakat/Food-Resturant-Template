@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Food Resturant Website | Contact Us</title>
+        <!-- fontawesome cdn  -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        />
+
+        <!--  UNICONS -->
+        <link
+            rel="stylesheet"
+            href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+        />
+
+        <!-- main css -->
+        <link rel="stylesheet" href="assets/css/main.css" />
+
+        <!-- responsive css -->
+        <link rel="stylesheet" href="assets/css/responsive.css" />
+    </head>
+    <body>
+        <!-- start header -->
+        <header class="header">
+            <section class="flex">
+                <a href="https://postimages.org/" target="_blank" class="logo">
+                    <img
+                        src="https://i.postimg.cc/QCyRWB1P/IMG-20220826-172957-743-removebg-preview.png"
+                        alt="IMG-20220826-172957-743-removebg-preview"
+                    />
+                </a>
+
+                <nav class="navbar">
+                    <a href="index.html">home</a>
+                    <a href="about.html">about</a>
+                    <a href="menu.html">menu</a>
+                    <a href="contact.html">contact</a>
+                    <a href="orders.html">orders</a>
+                </nav>
+
+                <div class="icons">
+                    <a href="search.html"><i class="fas fa-search"></i></a>
+                    <a href="cart.html">
+                        <i class="fas fa-shopping-cart"></i><span>(3)</span>
+                    </a>
+                    <div id="user-btn">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div id="menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+
+                <div class="profile">
+                    <p class="name">Anwar Barakat</p>
+                    <div class="flex">
+                        <a href="profile.html" class="btn">profile</a>
+                        <a href="" class="delete-btn">Sign out</a>
+                    </div>
+                    <p class="account">
+                        <a href="login.html">Sign in</a> or
+                        <a href="register.html">register</a>
+                    </p>
+                </div>
+            </section>
+        </header>
+        <!-- end header -->
+
+        <!-- start about -->
+        <div class="heading">
+            <h3>contact us</h3>
+            <p>
+                <a href="index.html">Home</a>
+                <span> / contact</span>
+            </p>
+        </div>
+        <!-- end about -->
+
+        <!-- start contact section -->
+        <section class="contact">
+            <div class="row">
+                <div class="image">
+                    <img src="assets/images/contact/contact.svg" alt="" />
+                </div>
+                <form action="" method="post" class="contact-form">
+                    <h3>tell us something</h3>
+                    <div class="box">
+                        <input
+                            type="text"
+                            name="name"
+                            maxlength="40"
+                            placeholder="type your name"
+                            required
+                        />
+                    </div>
+                    <div class="box">
+                        <input
+                            type="email"
+                            name="email"
+                            placeholder="type your name"
+                            required
+                        />
+                    </div>
+                    <div class="box">
+                        <input
+                            type="number"
+                            name="number"
+                            min="0"
+                            maxlength="9999999999"
+                            placeholder="type your number"
+                            onkeypress="if(this.value.length == 10) return false;"
+                            required
+                        />
+                    </div>
+                    <div class="box">
+                        <textarea
+                            name="msg"
+                            required
+                            placeholder="type your message"
+                            rows="5"
+                        ></textarea>
+                    </div>
+                    <input type="submit" value="send message" class="btn" />
+                </form>
+            </div>
+        </section>
+        <!-- end contact section -->
+
+        <!-- start footer -->
+        <footer class="footer">
+            <section class="grid">
+                <div class="box">
+                    <i class="icon fas fa-envelope-open-text"></i>
+                    <h3>our email</h3>
+                    <a href="mailto:brkatanwar0@gmail.com"
+                        >brkatanwar0@gmail.com
+                    </a>
+                </div>
+                <div class="box">
+                    <i class="icon fas fa-clock"></i>
+                    <h3>opening</h3>
+                    <p>00:07 am to 00:08 pm</p>
+                </div>
+                <div class="box">
+                    <i class="icon fas fa-map-marker-alt"></i>
+                    <h3>our address</h3>
+                    <a href="#">damascus, syria - xyz street</a>
+                </div>
+                <div class="box">
+                    <i class="icon fas fa-phone"></i>
+                    <h3>our phone</h3>
+                    <a href="tel:123123123">123-123-123</a>
+                </div>
+            </section>
+            <div class="credit">
+                created by <span>En. Anwar Barakat</span> | All right reseved
+            </div>
+        </footer>
+        <!-- end footer -->
+
+        <!-- fontawesome cdn  -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+
+        <!-- main js -->
+        <script
+            type="text/javascript"
+            src="assets/js/scripts.js"
+            async
+        ></script>
+    </body>
+</html>

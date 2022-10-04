@@ -99,6 +99,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0;
 }
 
 .header .flex .logo {
@@ -227,7 +228,7 @@ img {
 }
 
 .footer .grid .box h3 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
   color: var(--black-color);
 }
@@ -236,7 +237,7 @@ img {
 .footer .grid .box p {
   color: var(--light-color);
   display: block;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .footer .grid .box a:hover {
@@ -295,6 +296,19 @@ img {
   --light-color: #777;
   --main-border: 0.2rem solid var(--black-color);
   --main-transition: all 0.2s;
+}
+
+.row, .about .row, .contact .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
+  padding: 3rem;
 }
 
 .box-container, .category .box-container, .steps .box-container {
@@ -563,29 +577,13 @@ img {
   margin: 2rem;
 }
 
-.about .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 2rem;
-  padding: 3rem;
-}
-
 .about .row .image {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 40rem;
           flex: 1 1 40rem;
   max-width: 400px;
-}
-
-.about .row .image img {
-  margin: auto;
   display: block;
+  margin: auto;
 }
 
 .about .row .content {
@@ -601,7 +599,7 @@ img {
 }
 
 .about .row .content p {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   line-height: 2;
   color: var(--light-color);
   padding: 1rem 4rem;
@@ -685,5 +683,59 @@ img {
 .reviews .slide h3 {
   color: var(--black-color);
   font-size: 2rem;
+}
+
+.contact .row {
+  gap: 5rem;
+}
+
+.contact .row .image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  max-width: 400px;
+  display: block;
+  margin: auto;
+}
+
+.contact .row .contact-form {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40px;
+          flex: 1 1 40px;
+  border: var(--main-border);
+  max-width: 550px;
+  padding: 2rem;
+  display: -ms-grid;
+  display: grid;
+  gap: 1rem;
+}
+
+.contact .row .contact-form h3 {
+  font-size: 3rem;
+  color: var(--black-color);
+}
+
+.contact .row .contact-form .box {
+  color: var(--black-color);
+  border: var(--main-border);
+  padding: 0.5rem 0;
+  width: 100%;
+}
+
+.contact .row .contact-form .box input,
+.contact .row .contact-form .box textarea {
+  font-size: 1.3rem;
+  padding-left: 1rem;
+}
+
+
+.contact .row .contact-form .box textarea {
+  resize: none;
+}
+
+.contact .row .contact-form .btn {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 /*# sourceMappingURL=main.css.map */

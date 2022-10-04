@@ -3,18 +3,12 @@
 //________________________________________
 .about {
     .row {
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 2rem;
-        padding: 3rem;
+        @extend .row;
         .image {
             flex: 1 1 40rem;
             max-width: 400px;
-            img {
-                margin: auto;
-                display: block;
-            }
+            display: block;
+            margin: auto;
         }
         .content {
             flex: 1 1 40rem;
@@ -24,7 +18,7 @@
                 color: var(--black-color);
             }
             p {
-                font-size: 1.4rem;
+                font-size: 1.8rem;
                 line-height: 2;
                 color: var(--light-color);
                 padding: 1rem 4rem;

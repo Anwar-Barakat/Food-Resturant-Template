@@ -1,0 +1,41 @@
+.contact {
+    .row {
+        @extend .row;
+        gap: 5rem;
+        .image {
+            flex: 1 1 40rem;
+            max-width: 400px;
+            display: block;
+            margin: auto;
+        }
+        .contact-form {
+            flex: 1 1 40px;
+            border: var(--main-border);
+            max-width: 550px;
+            padding: 2rem;
+            display: grid;
+            gap: 1rem;
+            h3 {
+                font-size: 3rem;
+                color: var(--black-color);
+            }
+            .box {
+                color: var(--black-color);
+                border: var(--main-border);
+                padding: 0.5rem 0;
+                width: 100%;
+                input,
+                textarea {
+                    font-size: 1.3rem;
+                    padding-left: 1rem;
+                }
+                textarea {
+                    resize: none;
+                }
+            }
+            .btn {
+                width: fit-content;
+            }
+        }
+    }
+}
