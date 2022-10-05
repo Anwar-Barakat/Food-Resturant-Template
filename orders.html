@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Resturant Website | Checkout</title>
+        <title>Resturant Website | orders</title>
         <!-- fontawesome cdn  -->
         <link
             rel="stylesheet"
@@ -72,70 +72,57 @@
 
         <!-- start about -->
         <div class="heading">
-            <h3>checkout</h3>
+            <h3>orders</h3>
             <p>
                 <a href="index.html">Home</a>
-                <span> / checkout</span>
+                <span> / orders</span>
             </p>
         </div>
         <!-- end about -->
 
-        <!-- start checkout section -->
-        <section class="checkout">
-            <h1 class="title">order summary</h1>
-            <form action="" method="post">
-                <div class="cart-items">
-                    <h3>cart items</h3>
+        <!-- start orders section -->
+        <section class="orders">
+            <h1 class="title">your orders</h1>
+            <div class="box-container">
+                <div class="box">
+                    <p>placed on : <span> 6-10-2022 </span></p>
+                    <p>name : <span> Anwar Barakat </span></p>
+                    <p>number : <span> 098765321 </span></p>
+                    <p>email : <span> brkatanwar0@gmail.com </span></p>
+                    <p>address : <span> Damascus - Syria </span></p>
                     <p>
-                        <span class="name">main dish 01</span>
-                        <span class="price">$3</span>
+                        your orders :
+                        <span>
+                            delicious pizza 01 (01) - delicious chicken 01 (01)
+                        </span>
                     </p>
+                    <p>payment method : <span> cash on delivery </span></p>
                     <p>
-                        <span class="name">delicious pizza 01</span>
-                        <span class="price">$4</span>
+                        payment status :
+                        <span style="color: var(--second-color)"> pending</span>
                     </p>
-                    <p class="grand_total">
-                        <span class="name">grand total : </span>
-                        <span class="price">$7</span>
-                    </p>
-                    <a href="cart.html" class="btn">view cart</a>
                 </div>
-                <div class="user-info">
-                    <h3>your info</h3>
+                <div class="box">
+                    <p>placed on : <span> 6-10-2022 </span></p>
+                    <p>name : <span> Anwar Barakat </span></p>
+                    <p>number : <span> 098765321 </span></p>
+                    <p>email : <span> brkatanwar0@gmail.com </span></p>
+                    <p>address : <span> Damascus - Syria </span></p>
                     <p>
-                        <i class="fas fa-user"></i> <span>Anwar Barakat</span>
+                        your orders :
+                        <span>
+                            delicious pizza 01 (01) - delicious chicken 01 (01)
+                        </span>
                     </p>
-                    <p><i class="fas fa-phone"></i><span>+0987654321</span></p>
+                    <p>payment method : <span> cash on delivery </span></p>
                     <p>
-                        <i class="fas fa-envelope-open"></i>
-                        <span>brkatanwar0@gmail.com</span>
+                        payment status :
+                        <span style="color: var(--second-color)"> pending</span>
                     </p>
-                    <a href="update_profile.html" class="btn">update info</a>
-
-                    <h3>your address</h3>
-                    <p>
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Damascus - Syria</span>
-                    </p>
-                    <a href="update_address.html" class="btn">update address</a>
-                    <select name="method" class="box" required>
-                        <option value="" selected disabled>
-                            select payment method
-                        </option>
-                        <option value="cach on delivery">
-                            cach on delivery
-                        </option>
-                        <option value="credit card">credit card</option>
-                        <option value="paytm">paytm</option>
-                        <option value="paypal">paypal</option>
-                    </select>
-                    <button type="submit" class="delete-btn">
-                        place order
-                    </button>
                 </div>
-            </form>
+            </div>
         </section>
-        <!-- end checkout section -->
+        <!-- end orders section -->
 
         <!-- start footer -->
         <footer class="footer">

@@ -1,0 +1,18 @@
+.orders {
+    .box-container {
+        @extend .box-container;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        .box {
+            display: grid;
+            gap: 1rem;
+            padding: 2rem;
+            max-width: 500px;
+            border: var(--main-border);
+            margin: auto;
+            p {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}

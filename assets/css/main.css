@@ -311,7 +311,7 @@ img {
   padding: 3rem;
 }
 
-.box-container, .category .box-container, .steps .box-container {
+.box-container, .category .box-container, .steps .box-container, .orders .box-container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
@@ -947,9 +947,25 @@ img {
   font-size: 1.5rem;
 }
 
-.checkout form .user-info hr {
-  background-color: var(--light-color);
-  height: 1px;
-  margin: 0.5rem 0 1rem;
+.orders .box-container {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.orders .box-container .box {
+  display: -ms-grid;
+  display: grid;
+  gap: 1rem;
+  padding: 2rem;
+  max-width: 500px;
+  border: var(--main-border);
+  margin: auto;
+}
+
+.orders .box-container .box p {
+  font-size: 1.5rem;
 }
 /*# sourceMappingURL=main.css.map */
