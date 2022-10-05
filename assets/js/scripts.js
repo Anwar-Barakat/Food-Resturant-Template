@@ -18,3 +18,16 @@ window.onscroll = () => {
     navbar.classList.remove("active");
     profile.classList.remove("active");
 };
+
+//________________________________________
+// Loading
+//________________________________________
+function loading() {
+    document.querySelector(".loader").style.display = "none";
+}
+
+function fadeOut() {
+    setInterval(loading, 2500);
+}
+
+window.onload = fadeOut();
