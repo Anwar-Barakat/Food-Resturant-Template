@@ -1,0 +1,39 @@
+.form-container {
+    margin: 3rem auto;
+    max-width: 40rem;
+    border: var(--main-border);
+    text-align: center;
+    display: grid;
+    gap: 1.5rem;
+    h3 {
+        font-size: 2.5rem;
+        color: var(--black-color);
+        text-transform: uppercase;
+    }
+    form {
+        display: grid;
+        gap: 1rem;
+        .box {
+            width: 100%;
+            border: var(--main-border);
+            text-align: initial;
+            font-size: 1.5rem;
+            input {
+                padding: 0.5rem;
+            }
+        }
+        p {
+            color: var(--light-color);
+            font-size: 1.3rem;
+            display: flex;
+            justify-content: flex-start;
+            a {
+                font-weight: 500;
+                color: var(--light-color);
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

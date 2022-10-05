@@ -180,6 +180,10 @@ img {
   transition: 0.5s;
 }
 
+.header .flex .profile .flex {
+  margin: initial;
+}
+
 .header .flex .profile.active {
   opacity: 1;
   right: 2rem;
@@ -722,14 +726,13 @@ img {
 .contact .row .contact-form .box {
   color: var(--black-color);
   border: var(--main-border);
-  padding: 0.5rem 0;
   width: 100%;
 }
 
 .contact .row .contact-form .box input,
 .contact .row .contact-form .box textarea {
-  font-size: 1.3rem;
-  padding-left: 1rem;
+  font-size: 1.5rem;
+  padding: 0.5rem;
 }
 
 
@@ -967,5 +970,58 @@ img {
 
 .orders .box-container .box p {
   font-size: 1.5rem;
+}
+
+.form-container {
+  margin: 3rem auto;
+  max-width: 40rem;
+  border: var(--main-border);
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.form-container h3 {
+  font-size: 2.5rem;
+  color: var(--black-color);
+  text-transform: uppercase;
+}
+
+.form-container form {
+  display: -ms-grid;
+  display: grid;
+  gap: 1rem;
+}
+
+.form-container form .box {
+  width: 100%;
+  border: var(--main-border);
+  text-align: initial;
+  font-size: 1.5rem;
+}
+
+.form-container form .box input {
+  padding: 0.5rem;
+}
+
+.form-container form p {
+  color: var(--light-color);
+  font-size: 1.3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.form-container form p a {
+  font-weight: 500;
+  color: var(--light-color);
+}
+
+.form-container form p a:hover {
+  text-decoration: underline;
 }
 /*# sourceMappingURL=main.css.map */
