@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Resturant Website | Contact Us</title>
+        <title>Resturant Website | update profile</title>
         <!-- fontawesome cdn  -->
         <link
             rel="stylesheet"
@@ -23,6 +23,7 @@
         <!-- responsive css -->
         <link rel="stylesheet" href="assets/css/responsive.css" />
     </head>
+
     <body>
         <!-- start header -->
         <header class="header">
@@ -72,68 +73,67 @@
 
         <!-- start about -->
         <div class="heading">
-            <h3>contact us</h3>
+            <h3>update Info</h3>
             <p>
                 <a href="index.html">Home</a>
-                <span> / contact</span>
+                <span> / update Info</span>
             </p>
         </div>
         <!-- end about -->
 
-        <!-- start contact section -->
-        <section class="contact">
-            <div class="row">
-                <div class="image">
-                    <img src="assets/images/contact/contact.svg" alt="" />
-                </div>
-                <form action="" method="post" class="contact-form">
-                    <h3>tell us something</h3>
-                    <div class="box">
-                        <input
-                            type="text"
-                            name="name"
-                            maxlength="40"
-                            placeholder="type your name"
-                            required
-                        />
-                    </div>
-                    <div class="box">
-                        <input
-                            type="email"
-                            name="email"
-                            placeholder="type your name"
-                            required
-                        />
-                    </div>
-                    <div class="box">
-                        <input
-                            type="number"
-                            name="number"
-                            min="0"
-                            maxlength="9999999999"
-                            placeholder="type your number"
-                            onkeypress="if(this.value.length == 10) return false;"
-                            required
-                        />
-                    </div>
-                    <div class="box">
-                        <textarea
-                            name="msg"
-                            required
-                            placeholder="type your message"
-                            rows="5"
-                        ></textarea>
-                    </div>
+        <!-- start profile section -->
+        <section class="form-container">
+            <h3>your profile</h3>
+            <form action="" method="post">
+                <div class="box">
                     <input
-                        type="submit"
-                        value="send message"
-                        class="btn"
-                        name="submit"
+                        type="text"
+                        name="name"
+                        placeholder="type your name"
+                        maxlength="20"
+                        value="Anwar barakat"
+                        required
                     />
-                </form>
-            </div>
+                </div>
+                <div class="box">
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="type your email"
+                        maxlength="50"
+                        value="info@gmail.com"
+                        oninput="this.value = this.value.replace(/\s/g, '')"
+                        required
+                    />
+                </div>
+                <div class="box">
+                    <input
+                        type="password"
+                        name="current_password"
+                        placeholder="type current password"
+                        oninput="this.value = this.value.replace(/\s/g, '')"
+                    />
+                </div>
+                <div class="box">
+                    <input
+                        type="password"
+                        name="new_password"
+                        placeholder="type new password"
+                        oninput="this.value = this.value.replace(/\s/g, '')"
+                    />
+                </div>
+                <div class="box">
+                    <input
+                        type="password"
+                        name="confirmation_password"
+                        placeholder="confirmation password"
+                        oninput="this.value = this.value.replace(/\s/g, '')"
+                    />
+                </div>
+                <input type="submit" value="update" class="btn" name="submit" />
+            </form>
         </section>
-        <!-- end contact section -->
+        <!-- end profile section -->
 
         <!-- start footer -->
         <footer class="footer">

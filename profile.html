@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Resturant Website | Contact Us</title>
+        <title>Resturant Website | profile</title>
         <!-- fontawesome cdn  -->
         <link
             rel="stylesheet"
@@ -23,6 +23,7 @@
         <!-- responsive css -->
         <link rel="stylesheet" href="assets/css/responsive.css" />
     </head>
+
     <body>
         <!-- start header -->
         <header class="header">
@@ -72,68 +73,33 @@
 
         <!-- start about -->
         <div class="heading">
-            <h3>contact us</h3>
+            <h3>profile</h3>
             <p>
                 <a href="index.html">Home</a>
-                <span> / contact</span>
+                <span> / profile</span>
             </p>
         </div>
         <!-- end about -->
 
-        <!-- start contact section -->
-        <section class="contact">
-            <div class="row">
-                <div class="image">
-                    <img src="assets/images/contact/contact.svg" alt="" />
-                </div>
-                <form action="" method="post" class="contact-form">
-                    <h3>tell us something</h3>
-                    <div class="box">
-                        <input
-                            type="text"
-                            name="name"
-                            maxlength="40"
-                            placeholder="type your name"
-                            required
-                        />
-                    </div>
-                    <div class="box">
-                        <input
-                            type="email"
-                            name="email"
-                            placeholder="type your name"
-                            required
-                        />
-                    </div>
-                    <div class="box">
-                        <input
-                            type="number"
-                            name="number"
-                            min="0"
-                            maxlength="9999999999"
-                            placeholder="type your number"
-                            onkeypress="if(this.value.length == 10) return false;"
-                            required
-                        />
-                    </div>
-                    <div class="box">
-                        <textarea
-                            name="msg"
-                            required
-                            placeholder="type your message"
-                            rows="5"
-                        ></textarea>
-                    </div>
-                    <input
-                        type="submit"
-                        value="send message"
-                        class="btn"
-                        name="submit"
-                    />
-                </form>
+        <!-- start profile section -->
+        <section class="user-details">
+            <div class="user-info">
+                <i class="fas fa-user-circle"></i>
+                <p><i class="fas fa-user"></i> <span>Anwar Barakat</span></p>
+                <p><i class="fas fa-phone"></i><span>+0987654321</span></p>
+                <p>
+                    <i class="fas fa-envelope-open"></i>
+                    <span>brkatanwar0@gmail.com</span>
+                </p>
+                <a href="update_profile.html" class="btn">update info</a>
+                <p class="address">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Damascus - Syria</span>
+                </p>
+                <a href="update_address.html" class="btn">update address</a>
             </div>
         </section>
-        <!-- end contact section -->
+        <!-- end profile section -->
 
         <!-- start footer -->
         <footer class="footer">
